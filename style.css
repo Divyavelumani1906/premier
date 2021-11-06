@@ -1,0 +1,480 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  #btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#btnScrollToTop:active{
+  background: transparent;
+}
+header{
+  font-size: 30px;
+  padding: 20px;
+  }
+  header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(black&whiteroom.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+}
+.nav-link{
+    font-size: 18px;
+    border: 2px solid transparent;
+    align-content: flex-end;
+}
+.nav-link:hover{
+    border-bottom: 2px solid transparent;
+    transition: 0.1s;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    a:hover,a.nav-link{
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+  body{
+    font-family: sans-serif;
+    overflow: hidden;
+    user-select: none;
+  }
+  .logo img{
+    float: left;
+    width: 200px;
+    height: auto;
+}
+  nav .logo{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 0 100px;
+  }
+ 
+  nav{
+    height: 80px;
+    width: 100%;
+    background: transparent;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 7px 13px;
+    line-height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 13px;
+    transition: .6s ease;
+  }
+  nav ul li .nav-link:hover,
+  nav ul li .nav-link.active{
+      background: none;
+      color: white;
+  }
+  nav ul li .nav-links:hover,
+  nav ul li .nav-links.active{
+    background: none;
+    display: block;
+      color: white;
+  }
+  .nav-links{
+    display: block;
+    background-color: white;
+  }
+  a.nav-link,a:hover{
+      background: transparent;
+      transition: .5s;
+  }
+  a.nav-links,a:hover{
+    background: transparent;
+    transition: .5s;
+}
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid transparent;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid transparent;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.button{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background: url(logopremeir-1-1.png);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh -80px);
+  }
+ 
+/*------------Home----------*/
+span{
+    color: black;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+}
+
+/*------------About----------*/
+
+#about img {
+    width: 25 rem;
+    height:25rem;
+    border-radius: 50px;
+}
+ /*------------Contact---------*/
+ .b{
+  color: black;
+}
+form{
+  align-items: center;
+  padding: 40px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.2),
+              -1px -1px 5px rgba(0,0,0,.05);
+  border-radius: 30px;            
+}
+
+.socialmedia-icons{
+  width: fit-content;
+  padding: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link{
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+.fa {  
+  width: 20px;
+  padding: 25px;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  margin: 5px 8px;
+  color: rgb(15, 14, 14);
+  border-radius: 70%; 
+}
+
+.fa:hover {
+    opacity: 0.05;
+    background-color: black;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  background: #111;
+  height: 35%;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background:white;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: white;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 30%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: white;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: white;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: absolute;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 4px 0;
+  }
+}
+
+/* Scroll Personalizado */
+.scroll-bg{
+  background: transparent;
+  width: 100%;
+  margin: 0 auto;
+}
+.scroll-div{
+  width: 100%;
+  background:white;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.scroll-object{
+  color: black;
+  font-family: cursive;
+  font-size: 15px;
+  padding: 20px;
+}
+
+/* whatsapp */
+footer i{
+  margin:0px 5px;
+  margin-top:10px;
+  padding:10px;
+  font-size:15px;
+  background:white;
+  border-radius: 56% 44% 49% 51% / 42% 11% 89% 58%;
+}
+#whatsapp{
+  position:absolute;
+  bottom:5%;
+  right:10%;
+  padding:20px;
+  font-size:25px;
+  color:white;
+  background:#25d366;
+  border-radius:50%;
+}
